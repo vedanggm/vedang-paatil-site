@@ -1,11 +1,13 @@
 # VEDANG PAATIL — Portfolio Site
 
-A rebranded 1:1 clone of a Next.js creative-developer portfolio, running fully offline.
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vedanggm/vedang-paatil-site)
+
+A rebranded 1:1 clone of a Next.js creative-developer portfolio, running offline or deployed globally on Vercel.
 Every asset is the real production build — fonts, WebGL model, video reels, and the
 original CSS/GSAP animation code — with the identity strings swapped.
 
 ```bash
-node server.js          # → http://localhost:3000
+npm start               # runs local server at http://localhost:3000
 ```
 
 ---
