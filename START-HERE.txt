@@ -1,0 +1,51 @@
+VEDANG PAATIL — PORTFOLIO SITE
+==============================
+
+HOW TO RUN
+----------
+You need Node.js installed (https://nodejs.org — any version 16+).
+
+  1. Unzip this folder somewhere.
+  2. Open a terminal in this folder.
+  3. Run:   node server.js
+  4. Open:  http://localhost:3000
+
+That's it. No npm install, no build step, no internet needed.
+
+Mac/Linux shortcuts:
+  ./start.sh          (then open http://localhost:3000)
+  PORT=8080 node server.js     to use a different port
+
+Windows: double-click start.bat, or run  node server.js
+
+WHY A SERVER AND NOT JUST OPENING index.html
+--------------------------------------------
+The site is a Next.js build. Its asset paths are absolute ("/_next/...",
+  "/images/..."), which browsers cannot resolve from file://. Opening
+  index.html directly will show an unstyled page. The bundled server.js
+  resolves those paths and also handles the three dynamic routes the site
+  needs:
+
+  /_next/image?...   the image-optimizer endpoint (work thumbnails)
+  Range requests     so <video> can stream and seek
+  clean URLs         /library, /cgv, /prompts/... resolve to .html files
+
+FOLDER LAYOUT
+-------------
+  site/        the full website (HTML, CSS, JS, fonts, images, video, 3D model)
+  server.js    the static server described above
+  tools/       the scripts used to build and verify the site
+  README.md    full documentation
+
+WHAT'S INCLUDED
+---------------
+  6 pages           /  /library  /cgv  /confidentialite  /cookies  /mentions-legales
+  5 prompt demos    /prompts/*
+  24 work thumbnails, 10 video reels, a 26 MB WebGL model
+  13 web fonts      Bodoni Moda, Big Shoulders Display, Martian Mono, Barlow Condensed
+  1 download        /downloads/ai-status-orb.zip
+
+REQUIREMENTS TO PUBLISH PUBLICLY
+--------------------------------
+The imagery, video reels and 3D model still belong to the original site
+owner. Replace them with your own before deploying this publicly.

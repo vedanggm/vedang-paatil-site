@@ -1,0 +1,17 @@
+{
+  "name": "vedang-paatil-site",
+  "version": "1.0.0",
+  "description": "Portfolio of Vedang Paatil — Creative Developer",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "portfolio",
+    "creative-developer",
+    "nextjs"
+  ],
+  "author": "Vedang Paatil",
+  "license": "ISC"
+}
